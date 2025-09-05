@@ -7,17 +7,12 @@ const insuranceSchema = new mongoose.Schema({
         requied:true,
     },
 
-    insuranceComapny:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"user",
-        requied:true,
-    },
+    insuranceCompany: {   // ✅ corrected spelling
+  type: mongoose.Schema.Types.ObjectId,
+  ref: "user",
+  required: true,
+},
 
-    policyNumber:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:"user",
-        requied:true
-    },
 
     status:{
         type:String,
