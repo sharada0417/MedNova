@@ -20,8 +20,10 @@ const labSchema = new mongoose.Schema({
 
     result: { 
         type:String ,
+        enum:["Pending","Approved","Rejected"],
         default: "Pending"
     },
+
 
     createdAt : {
         type:Date ,

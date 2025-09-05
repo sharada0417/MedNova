@@ -13,6 +13,9 @@ const channelCenterSchema = new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:"user"
     }],
+     appointmentDate: {
+        type: Date, 
+    },
     createdAt:{
         type:Date,
         default:Date.now

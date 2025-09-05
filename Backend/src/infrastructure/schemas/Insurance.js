@@ -7,11 +7,11 @@ const insuranceSchema = new mongoose.Schema({
         requied:true,
     },
 
-    insuranceCompany: {   // ✅ corrected spelling
-  type: mongoose.Schema.Types.ObjectId,
-  ref: "user",
-  required: true,
-},
+    insuranceCompany: {   
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
+    },
 
 
     status:{
