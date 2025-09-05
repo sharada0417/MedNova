@@ -10,6 +10,7 @@ ConnectDB();
 
 app.use("/users",userrouter);
 
+
 const PORT = 5000;
 app.listen(5000,
     console.log(`Sever is running on port ${PORT}`)
