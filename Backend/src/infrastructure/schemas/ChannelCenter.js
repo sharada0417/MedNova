@@ -19,4 +19,4 @@ const channelCenterSchema = new mongoose.Schema({
     }
 })
 
-export default channelCenterSchema;
+export default mongoose.model("channelCenter", channelCenterSchema);
